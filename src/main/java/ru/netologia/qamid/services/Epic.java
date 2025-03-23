@@ -15,8 +15,8 @@ public class Epic extends Task {
 
     @Override
     public boolean matches(String query) {
-        // Если массив subtasks пустой или null, сразу возвращаем false
-        if (subtasks == null || subtasks.length == 0) {
+        // Если массив subtasks пустой, сразу возвращаем false
+        if (subtasks.length == 0) {
             return false;
         }
 
