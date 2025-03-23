@@ -22,7 +22,7 @@ public class Epic extends Task {
 
         // Проверяем каждую подзадачу на наличие query
         for (String subtask : subtasks) {
-            if (subtask != subtask.contains(query)) {
+            if (subtask.contains(query)) {
                 return true; // Возвращаем true, если найдено совпадение
             }
         }
